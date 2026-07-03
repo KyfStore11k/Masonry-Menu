@@ -1,0 +1,11 @@
+apply plugin: 'dev.architectury.loom-no-remap'
+
+dependencies {
+    minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
+
+    implementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+
+    implementation "dev.architectury:architectury:$rootProject.architectury_api_version"
+
+    compileOnly "org.spongepowered:mixin:$rootProject.mixin_version"
+}

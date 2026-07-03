@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[10,)"
+license = "MIT"
+
+[[mods]]
+modId = "masonrymenu"
+version = "${version}"
+displayName = "Masonry Menu"
+authors = "KyfStore11k"
+description='''
+Masonry Menu is an upgraded, feature-rich alternative to ModMenu featuring built-in themes and plugin support. It elevates your mod management with advanced capabilities like dynamic plugin reloading and soft-failure recovery to keep your game running smoothly.
+'''
+logoFile = "assets/masonrymenu/icon.png"
+
+[[dependencies.masonrymenu]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.2.0.7-beta,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.masonrymenu]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.masonrymenu]]
+modId = "architectury"
+type = "required"
+versionRange = "[21.0.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "masonrymenu.mixins.json"

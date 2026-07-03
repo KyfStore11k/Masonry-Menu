@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "masonrymenu",
+  "version": "${version}",
+  "name": "Masonry Menu",
+  "description": "Masonry Menu is an upgraded, feature-rich alternative to ModMenu featuring built-in themes and plugin support. It elevates your mod management with advanced capabilities like dynamic plugin reloading and soft-failure recovery to keep your game running smoothly.",
+  "authors": [
+    "KyfStore11k"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/masonrymenu/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kyfstore.masonrymenu.fabric.MasonryMenuFabric"
+    ],
+    "client": [
+      "com.kyfstore.masonrymenu.fabric.client.MasonryMenuFabricClient"
+    ]
+  },
+  "mixins": [
+    "masonrymenu.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "architectury": ">=21.0.2",
+    "fabric-api": "*"
+  }
+}
